@@ -11,7 +11,7 @@ public class Questao02 {
         int n1 = ler.nextInt();
         n1 = ++n1;
         System.out.println("Vizinho a direita do Numero Base: "+n1);
-        n1 = --n1;
+        n1 = --n1 - 1;
         System.out.println("Vizinho a esquerda do Numero Base: "+n1);
         ler.close();
 
