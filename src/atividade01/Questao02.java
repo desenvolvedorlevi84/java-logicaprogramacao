@@ -14,8 +14,6 @@ public class Questao02 {
         n1 = --n1 - 1;
         System.out.println("Vizinho a esquerda do Numero Base: "+n1);
         ler.close();
-
         
-
     }
 }
