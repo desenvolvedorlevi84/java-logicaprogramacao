@@ -9,10 +9,10 @@ public class Questao02 {
         System.out.println("Digite o numero base.");
         // 2. Ler o número
         int n1 = ler.nextInt();
-        n1 = ++n1;
-        System.out.println("Vizinho a direita do Numero Base: "+n1);
-        n1 = --n1 - 1;
-        System.out.println("Vizinho a esquerda do Numero Base: "+n1);
+        int nAnterior = n1 - 1;
+        int nPosterior = n1 + 1;
+        System.out.println("Vizinho a direita do Numero Base: "+nPosterior);
+        System.out.println("Vizinho a esquerda do Numero Base: "+nAnterior);
         ler.close();
         
     }
