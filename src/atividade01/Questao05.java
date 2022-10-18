@@ -12,7 +12,7 @@ public class Questao05 {
         System.out.println("Digite valor do jantar");
         // 3 Ler o valor
         float valorJantar = ler.nextFloat();
-        float taxaGarcon = valorJantar /100*10;
+        float taxaGarcon = (valorJantar /100)*10;
         // 8. Calculo da refeição com a taxa do garçon.
         float custoRestaurante = valorJantar + taxaGarcon;
         System.out.println("O valor total da sua conta é: " + custoRestaurante + " reais");
