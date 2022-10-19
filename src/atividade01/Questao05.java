@@ -17,6 +17,6 @@ public class Questao05 {
         float custoRestaurante = valorJantar + taxaGarcon;
         System.out.println("O valor total da sua conta é: " + custoRestaurante + " reais");
         
-        ler.close();
+        //ler.close();
     }
 }

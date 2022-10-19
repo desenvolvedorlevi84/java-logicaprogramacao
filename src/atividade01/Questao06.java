@@ -18,7 +18,7 @@ public class Questao06 {
    float calculoDivisao = valorConta / qtdPessoas;
    System.out.println("O valor para cada pessoa é: " + calculoDivisao + " reais");
    
-   ler.close();
+   //ler.close();
 } 
 
 }

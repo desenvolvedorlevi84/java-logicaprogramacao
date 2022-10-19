@@ -20,6 +20,6 @@ public class Questao01 {
         System.out.println("Média das Notas = "+r);
         String resultadofinal = (r >= 7) ? "Aprovado" : "Reprovado";
         System.out.println(resultadofinal);
-        ler.close();
+        //ler.close();
     }
 }
