@@ -5,7 +5,7 @@ public class Questao005 {
    public static void main(String[] args) {
     Scanner ler = new Scanner(System.in);
     int maiorid = 0;
-    int menorid =0;
+    int menorid = 0;
 
     for(int q = 1;q <= 5;q = q + 1){
         System.out.print("Digite sua idade: ");
