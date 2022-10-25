@@ -17,9 +17,10 @@ Scanner ler = new Scanner(System.in);
        // 8. Calculo da divisão.
        float calculoDivisao = valorConta / qtdPessoas;
        System.out.println("O valor para cada pessoa é: " + calculoDivisao + " reais");
+       ler.close();
 }
    
-   //ler.close();
+   
 
 
 }

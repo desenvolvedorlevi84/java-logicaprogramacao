@@ -13,7 +13,7 @@ public class Questao02 {
             int nPosterior = n1 + 1;
             System.out.println("Vizinho a direita do Numero Base: "+nPosterior);
             System.out.println("Vizinho a esquerda do Numero Base: "+nAnterior);
-            //ler.close();
+            ler.close();
         }
         
     

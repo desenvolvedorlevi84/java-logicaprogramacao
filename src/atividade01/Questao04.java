@@ -21,8 +21,9 @@ public class Questao04 {
             // 8. Calculo do sálario.
             double r = n1 * n2;
             System.out.println(nome + " seu salário será " + r + " reais");
+            ler.close();
         }
         
-        //ler.close();
+            
     
 }

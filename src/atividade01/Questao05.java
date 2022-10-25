@@ -16,8 +16,9 @@ public class Questao05 {
             // 8. Calculo da refeição com a taxa do garçon.
             float custoRestaurante = valorJantar + taxaGarcon;
             System.out.println("O valor total da sua conta é: " + custoRestaurante + " reais");
+            ler.close();
         }
         
-        //ler.close();
+        
     
 }
