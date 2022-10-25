@@ -1,41 +1,37 @@
 package atividade03;
-import java.util.Scanner;
-public class Questao006 {
-    // 6. Escreva um programa que vai ler 5 números o sistema vai mostrar o maior o menor a soma e a média dos números digitados.
-    public static void main(String[] args) {
-    
-        Scanner ler = new Scanner (System.in); 
-            int media = 0;
-            int soma = 0;
-            int valor[] = new int[5];  
-            
-            for(int i = 0; i < valor.length; i++){  
-                System.out.print("Digite o " +(i+1)+"º valor: ");  
-                valor[i] = ler.nextInt();  
 
-                soma = soma + valor[i];
-            }  
-    
-    
-            int maior = valor[0];
-            for (int i = 1 ; i < valor.length; i++){
-                    if ( valor[i] > maior) {
-                          maior = valor[i];
-                   }
-              }
-    
-            int menor = valor[0];
-            for (int i = 1; i < valor.length; i++) {  
-                if(valor[i] < menor){  
-                    menor = valor[i];  
-                }  
+import java.util.Scanner;
+
+public class Questao006 {
+    /**
+     * Escreva um programa que vai ler 5 números o sistema vai mostrar
+     * o maior o menor a soma e a média dos números digitados.
+     * 
+     * @param args
+     */
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        int maior = -2147483648;
+        int menor = 2147483647;
+        int soma = 0;
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Digite um numero");
+            int num = ler.nextInt();
+            if (num > maior) {
+                maior = num;
             }
-            int mediat = media = soma /5;
-            System.out.println("Maior valor = "+ maior);  
-            System.out.println("Menor valor = "+ menor);  
-            System.out.println("a soma é:"+ soma);
-            System.out.println("a media é:"+ mediat);
-            ler.close();
-        }  
-    
+            if (num < menor) {
+                menor = num;
+            }
+            soma = soma + num;
+        }
+        ler.close();
+        System.out.println("Maior = " + maior);
+        System.out.println("Menor = " + menor);
+        System.out.println("Soma = " + soma);
+        System.out.println("Média = " + (soma / 5));
+        System.out.println("Resto = " + (soma % 5)); // calculo do módulo que é o resto da operação
+        float media = soma / 5f;
+        System.out.printf("Média fracionada = %.2f", media);
+    }
 }
