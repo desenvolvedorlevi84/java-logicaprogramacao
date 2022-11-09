@@ -8,5 +8,6 @@ public class Aleatorio {
             System.out.println("Dado de 6 lados " + dado6.rolar());
             System.out.println("Dado de 12 lados " + dado12.rolar());
         }
+        
     }
 }
